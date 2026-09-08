@@ -1,0 +1,16 @@
+{
+  "name": "x-ca-auto-buyer",
+  "version": "2.0.0",
+  "description": "CA-first Base token verifier and direct Uniswap V3 buyer with dual X watchers and non-blocking Telegram alerts.",
+  "main": "dist/index.js",
+  "scripts": { "build": "tsc -p tsconfig.json", "start": "node dist/index.js", "dev": "ts-node src/index.ts", "test": "node --require ts-node/register --test tests/*.test.ts" },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "telegraf": "^4.16.3",
+    "viem": "^2.21.54",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": { "@types/better-sqlite3": "^7.6.11", "@types/node": "^22.5.5", "ts-node": "^10.9.2", "typescript": "^5.6.2" },
+  "engines": { "node": ">=20.0.0" }
+}
